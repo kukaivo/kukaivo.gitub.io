@@ -1,0 +1,82 @@
+ h1{
+         background-color: green;
+         border-bottom: 2px solid blue;
+         
+         
+     }
+     
+     #menu li{ 
+         display: inline;
+         padding: 20px;
+     }
+     
+     #menu a{ 
+         text-decoration: none;
+   
+     }
+     a li:hover
+     {
+      color: red;   
+     }
+
+#menu
+{
+   list-style: none;
+    text-align: right;
+    margin: 0px;
+    padding: 20px;
+    background-color: bisque;
+}
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+.Container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: #c6724B;
+}
+
+.myForm
+{
+ padding: 20px;   
+    
+}
+
+.myForm label {
+    display: block; 
+}
+
+.myForm input[type="text"], .myForm input[type="tel"],
+.myForm input[type="number"], .myForm input[type="email"],
+.myForm textarea
+{
+    padding: 5px;
+    width: 90%;
+}
+.btn1
+
+
+
+{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+
+        
+}
+#formDiv{
+    width: 75%;
+    float: left;
+    
+}
+#addressDiv{
+    width: 25%;
+    float: left;
+    color: yellow;
+}
+.clear {
+    clear: both;
+}
