@@ -1,0 +1,252 @@
+main {
+    width: 80%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    height: auto;
+}
+
+#landing {
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vh;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#landing-image {
+    background-image: url("../images/image1_1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.btn1 {
+    border: 1px #ccc solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50px;
+    color: white;
+    background-color: darkmagenta;
+    text-decoration: none;
+    transition: background 1000ms ease;
+}
+
+.btn1:hover {
+    background-color: cadetblue;
+}
+
+.header {
+    background-color: grey;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.header h2 {
+    color: white;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    margin: -10px;
+    color: brown;
+}
+
+.block {
+    width: 33.3%;
+    float: left;
+    display: inline-block;
+    height: 250px;
+    border: 1px solid green;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.myForm {
+    padding: 20px;
+}
+
+.myForm label {
+    display: block;
+    text-align: left;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="number"],
+.myForm input[type="email"],
+.myForm textarea {
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+#formDiv {
+    width: 65%;
+    float: left;
+}
+
+#addressDiv {
+    width: 25%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+.btn1 {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    width: 50%;
+}
+
+.fix {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50vh;
+    margin-left: -3.3rem;
+}
+
+#logo {
+    display: inline;
+    position: absolute;
+    top: 60px;
+    width: 10%;
+    height: 10%;
+    margin-left: 20px;
+}
+
+
+
+#newsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#news1 {
+    background-color: aqua;
+    padding: 10px;
+    order: 1;
+}
+
+#news2 {
+    background-color: coral;
+    padding: 10px;
+    order: 2;
+}
+
+#news3 {
+    background-color: mediumpurple;
+    padding: 10px;
+    order: 3;
+}
+
+
+@media screen and (max-width:768px) {
+    /*
+    body {
+        display: none;
+        
+    }
+*/
+
+    .block,
+    #formDiv,
+    #addressDiv {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #addressDiv {
+        margin: 10px;
+    }
+
+    #logo {
+        display: block;
+        width: 30%;
+        height: 20%;
+        top: 5%;
+        left: 10%;
+    }
+
+    #landing-text {
+        display: flex;
+        flex: 1 2 40vh;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .fix {
+        width: 35px;
+        height: 50px;
+        position: fixed;
+        top: 50vh;
+        margin-left: -2.5rem;
+    }
+
+    .btn1 {
+        display: block;
+        color: red;
+        margin: 10px 0 0 0;
+
+
+    }
+
+
+    #newsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

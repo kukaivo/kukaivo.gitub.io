@@ -1,0 +1,84 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title> Flex Box Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+        #flx1 {
+            background-color: aqua;
+            order: 2;
+            padding: 10px;
+            flex:2;
+        }
+        #flx2 {
+            background-color: coral;
+            order: 3;
+            padding: 10px;
+            flex:1;
+        }
+        #flx3 {
+            background-color: grey;
+            order: 4;
+            padding: 10px;
+            flex:1;
+        }
+        #flx4 {
+            background-color: peachpuff;
+            order: 1;
+            padding: 10px;
+            flex:1;
+        }
+        
+        @media (max-width:600px) {
+/*
+            body {
+                display:none;
+            }
+         
+*/   
+            #container {
+                display: flex;
+                flex-direction: column;
+        }
+        }
+    </style>
+<!--    <link rel="stylesheet" href="./css/myStyle.css">-->
+</head>
+
+<body>
+    <main id="container">
+        <div id="flx1">
+            <h1>1st FlexBox</h1>
+            <p>
+                First ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+            </p>
+        </div>
+        <div id="flx2">
+            <h1>2nd FlexBox</h1>
+            <p>
+                Second ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada
+            </p>
+        </div>
+        <div id="flx3">
+            <h1>3rd FlexBox</h1>
+            <p>
+                Third ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+            </p>
+        </div>
+        <div id="flx4">
+            <h1>4th FlexBox</h1>
+            <p>
+                Fourth ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum 
+            </p>
+        </div>
+    </main>
+
+</body>
+
+</html>

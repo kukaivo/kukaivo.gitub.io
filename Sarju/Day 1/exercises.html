@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <title>Javascript Exercises</title>
+    <meta charset="utf-8" ; />
+    <meta name="viewport" content="width=device-width" , initial-scale=1>
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+    <button onclick="clickF()">Test Button</button>
+    <button onclick="getUserInput()">Test Input</button>
+    <button onclick="testEquality()">Test Equality</button>
+    <button onclick="getHours()"> Get Hours - Ternary</button>
+    <button onclick="capital()"> Capitals - If Else</button>
+    <button onclick="capitalSwitch()"> Capitals - Switch</button>
+
+
+
+    <script>
+        console.log("An event is expected");
+
+        function clickF() {
+            alert("you have clicked a button");
+        }
+    </script>
+
+
+
+    <script>
+        function getUserInput() {
+            var fname = "Jason";
+            var lname = "Smith";
+            var age = 28;
+            var address;
+            document.write("<br>First Name: <h2>" + fname + "</h2><br>" + "Last Name: " + lname + "<br>Age: " + age);
+
+            console.log(typeof(fname));
+            console.log(typeof(lname));
+            console.log(typeof(age));
+            console.log(typeof(address));
+        }
+    </script>
+
+
+    <script>
+        function testEquality() {
+            a = 30;
+            b = 25;
+
+            if (a != b) {
+                console.log("x & Y values are not equal");
+            } else {
+                console.log("x & Y values are equal");
+            }
+
+            x = 30;
+            y = "30";
+
+            if (x !== y) {
+                console.log("x & Y values & type are not equal");
+            } else {
+                console.log("x & Y values & type are equal");
+            }
+        }
+    </script>
+
+    <script>
+        function getHours() {
+            var time = new Date().getHours();
+            document.getElementById("demo").innerHTML = (time >= 6 && time <= 12) ? "Good Morning" : (time >= 13 && time <= 16) ? "Good Afternoon" : (time >= 17 && time <= 22) ? "Good Evening" : "Good Night";
+        }
+    </script>
+
+
+    <script>
+        //window.addEventListener("load", capital, false);
+
+        function capital() {
+
+            var country = window.prompt("Please enter country: ");
+            var start = "The capital of " + country + " is: ";
+            country = country.toLowerCase();
+            var capitalName;
+
+            if (country === "united kingdom") {
+                capitalName = "London";
+            } else if (country === "france") {
+                capitalName = "Paris";
+
+            } else if (country === "italy") {
+                capitalName = "Rome";
+
+            } else if (country === "holland") {
+                capitalName = "Amsterdam";
+
+            } else if (country === "russia") {
+                capitalName = "Moscow";
+
+            }
+            
+            if (capitalName == undefined) {
+                 document.getElementById("demo").innerHTML = "Not known - try United Kingdom, France, Italy, Holland, Russia";
+            } else {
+            
+                document.getElementById("demo").innerHTML = start + capitalName;
+            }
+        }
+    </script>
+
+    <script>
+        function capitalSwitch() {
+            var country = window.prompt("Please enter country: ");
+            var start = "The capital of " + country + " is: ";
+            country = country.toLowerCase();
+
+            var capitalName;
+
+            switch (country) {
+                case "united kingdom":
+                    capitalName = "London";
+                    break;
+                case "france":
+                    capitalName = "Paris";
+                    break;
+
+                case "italy":
+                    capitalName = "Rome";
+                    break;
+
+                case "holland":
+                    capitalName = "Amsterdam";
+                    break;
+
+                case "russia":
+                    capitalName = "Moscow";
+                    break;
+
+                default:
+                 document.getElementById("demo").innerHTML = "Not known - try United Kingdom, France, Italy, Holland, Russia";
+            }
+            
+                document.getElementById("demo").innerHTML = start + capitalName;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
